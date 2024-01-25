@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="https://tse3.mm.bing.net/th?id=OIP.CKXw6PYmcr96d43cXIjBCwHaHa&pid=Api&P=0&h=180" alt="Logo" class="logo">
+    <div class="group"></div>
+    <h1 id="top">WELCOME TO MyBMI!</h1>
+
+    <form>
+        
+        <input type="text" id="Username" placeholder="Please Enter your Username">
+
+       
+        <input type="password" id="Password" placeholder="Please Enter your Password">
+
+        <div id="result"></div>
+
+        <div class="captcha-container">
+            <span id="captcha"></span>
+            <button type="button" onclick="generateCaptcha()">Refresh</button>
+        </div>
+
+        <input type="text" id="captchaInput" placeholder="Enter the captcha">
+
+        <button type="button" onclick="validateForm()">LOGIN</button>
+    </form>
+
+    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+
+    <script src="login.js">
+        
+    </script>
+</body>
+</html>
